@@ -53,7 +53,7 @@ PINECONE_INDEX_NAME=insurance-policies
 PINECONE_ENVIRONMENT=your-pinecone-environment
 
 # Data Configuration  
-INSURANCE_DATA_PATH=/Users/suryapavanmogalapalli/Downloads/Bajaj_Pro Health Prime Brochure.pdf_extracted.txt
+INSURANCE_DATA_PATH=Your Insurance file
 ```
 
 ### 2. Install Dependencies
@@ -146,27 +146,6 @@ The assistant collects essential information for accurate recommendations:
 - Session management
 - CORS configuration
 
-## 📋 Available Plans
-
-The system provides recommendations for **ManipalCigna ProHealth Prime** plans:
-
-### Plan Types:
-- **Protect Plan**: Basic coverage with essential benefits
-- **Advantage Plan**: Enhanced coverage with OPD benefits
-
-### Optional Packages:
-- **Enhance**: Maternity + room upgrade
-- **Enhance Plus**: Maternity + health maintenance  
-- **Freedom**: Worldwide emergency coverage
-- **Assure**: Sub-limits for cost control
-
-### Key Features:
-- Sum Insured: ₹3L to ₹100L
-- Family Floater options
-- Cumulative Bonus up to 200%
-- Unlimited restoration
-- Modern treatment coverage
-- Mental health coverage
 
 ## 🛠️ Troubleshooting
 
@@ -217,38 +196,6 @@ logging.basicConfig(level=logging.DEBUG)
 - **Voice**: Professional, clear English voice
 - **Speed**: 0.9x to 1.1x (natural pace)
 - **Stability**: High for consistent output
-
-## 🔒 Security & Privacy
-
-- All API keys stored in environment variables
-- No sensitive data logged
-- Session-based user data (not persistent)
-- CORS protection on token server
-- LiveKit JWT authentication
-
-## 📈 Performance Optimization
-
-- **Chunking Strategy**: 1000 chars with 200 char overlap
-- **Embedding Model**: OpenAI ada-002 (1536 dimensions)
-- **Search Results**: Top 10 matches for context
-- **Response Length**: Limited to 1500 tokens
-- **Caching**: Pinecone handles vector caching
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/new-feature`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature/new-feature`
-5. Submit a Pull Request
-
-## 📞 Support
-
-For issues or questions:
-- Check troubleshooting section above
-- Review logs for specific error messages
-- Ensure all API keys are valid and have sufficient credits
-- Verify insurance data file path is correct
 
 ## 📄 License
 
